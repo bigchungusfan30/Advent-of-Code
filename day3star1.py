@@ -1,7 +1,6 @@
 import re
 t = 0
 for line in open("input", "r"):
-    a = line.find("mul(")
     for i in re.findall("mul\([0-9]+,[0-9]+\)", line):
         comma = i.index(",")
         firstnum = i[4:comma]
